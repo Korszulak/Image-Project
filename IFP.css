@@ -1,0 +1,27 @@
+.pagebody
+{
+	background-color: powderblue;
+}
+
+.filter
+{
+	border: 2px solid transparent;
+	padding: 50px;
+}
+
+.filter:hover
+{
+	border: 2px solid black;
+	padding: 50px;
+}
+
+.img
+{
+	max-width: 350px;
+}
+
+input[type=file]
+{
+	padding:10px;
+}
+
