@@ -1,3 +1,3 @@
 # Image-Project
 
-Discord Channel : https://discord.gg/J2gD42
+Discord Channel : https://discord.gg/67CyK9S *Link updated to not expire.
