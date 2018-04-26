@@ -4,7 +4,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="generator" content="PSPad editor, www.pspad.com">
   <link rel="stylesheet" type="text/css" href="IFP.css">
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="IFP.js"></script>
   <title>IFP Project</title>
   </head>
@@ -24,7 +24,7 @@
 	
 		<tr>
 			<td class="filter" id="makeGray" onclick="makeGray()">Grayscale</td>
-			<td class="filter">Filter</td>
+			<td class="filter" id="test" onclick="editCanvas()">Test</td>
 			<td class="filter">Filter</td>
 			<td class="filter">Filter</td>
 			<td class="filter">Filter</td>
@@ -43,6 +43,7 @@
 	</table>
 	
 	<br>
-	
+	<canvas id="myCanvas" width="200" height="100"></canvas>
+  
   </body>
 </html>
