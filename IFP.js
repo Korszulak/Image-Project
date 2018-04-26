@@ -21,9 +21,9 @@ function editCanvas(val)
 	canvas.width = img.width;
 	canvas.height = img.height;
 	context.drawImage(img, 0, 0);
-	passOne = Math.random() * (0.600 - 0.000);
-	passTwo = Math.random() * (0.600 - 0.000) + 0.100;
-	passThree = Math.random() * (0.600 - 0.000) + 0.500;
+	passOne = Math.random() * (0.700 - 0.000)+ 0.100;
+	passTwo = Math.random() * (0.700 - 0.000) + 0.100;
+	passThree = Math.random() * (0.700 - 0.000) + 0.100;
 	//var savedImage = canvas.toDataURL("image/png");
 
 	var imageData = context.getImageData(0, 0, canvas.width, canvas.height),
@@ -51,9 +51,9 @@ function editCanvas(val)
 			pix[i+2] = (r*.200)+(g*.500)+(b*.100);
 			break;
 			case "Julian":
-			pix[i]=((r-b)+(r-g));
-			pix[i+1]=((g-r)+g);
-			pix[i+2]=(b*0.394);
+			pix[i]=((R-B)+(R-G))
+			pix[i+1]=((G-R)+G)
+			pix[i+2]=(B*0.394)
 			break;
 			case "Michael":
 			break;
@@ -70,8 +70,6 @@ function editCanvas(val)
 			break;
 			case "Nicolas":
       pix[i] = (r*.21)+(g*.72)+(b*.07)
-			pix[i+1] = (r*.12)+(g*.62)+(b*.1);
-			pix[i+2] = (r*.2)+(g*.26)+(b*.70);
 			break
 			case "Ali":
 			break;
