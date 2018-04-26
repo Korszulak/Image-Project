@@ -39,6 +39,10 @@ function editCanvas(val)
 			pix[i+2] = b;
 			break;
 			case "Jacob":
+			  // Color-Blind?
+      			pix[i] = (r*.230)+(g*.159)+(b*.0);
+			pix[i+1] = (r*.86)+(g*.180)+(b*.233);
+			pix[i+2] = (r*.0)+(g*.114)+(b*.178);
 			break;
 			case "Thaddeus":
 			pix[i] = (r*.500)+(g*.200)+(b*.160);
