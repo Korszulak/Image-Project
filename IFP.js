@@ -75,6 +75,9 @@ function editCanvas(val)
 			case "Ahmad":
 			break;
 			case "Karol":
+			pix[i] = r+b;
+			pix[i+1] = g+b;
+			pix[i+2] = b+b;
 			break;
 		}
 	}
