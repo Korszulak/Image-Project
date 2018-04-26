@@ -17,33 +17,34 @@
 	<input type='file' onchange="readURL(this);"/>
 	<br>
 	<img id="imgview" src="http://placehold.it/350" alt="Image view"/>
+	<canvas id="myCanvas" width="200" height="100"></canvas>
 	<br>
 	
 	
 	<table align="center">
 	
 		<tr>
-			<td class="filter" id="makeGray" onclick="makeGray()">Grayscale</td>
-			<td class="filter" id="test" onclick="editCanvas()">Test</td>
-			<td class="filter">Filter</td>
-			<td class="filter">Filter</td>
-			<td class="filter">Filter</td>
-			<td class="filter">Filter</td>
+			<td class="filter" id="NoEdit" onclick="editCanvas(this.id)">No Edit</td>
+			<td class="filter" id="Jacob" onclick="editCanvas(this.id)">JacobFilter</td>
+			<td class="filter" id="Thaddeus" onclick="editCanvas(this.id)">ThaddeusFilter</td>
+			<td class="filter" id="Jace" onclick="editCanvas(this.id)">JaceFilter</td>
+			<td class="filter" id="Edwin" onclick="editCanvas(this.id)">EdwinFilter</td>
+			<td class="filter" id="Michael" onclick="editCanvas(this.id)">MichaelFilter</td>
 		</tr>
 		
 		<tr>
-			<td class="filter">Filter</td>
-			<td class="filter">Filter</td>
-			<td class="filter">Filter</td>
-			<td class="filter">Filter</td>
-			<td class="filter">Filter</td>
-			<td class="filter">Filter</td>
+			<td class="filter" id="Cris" onclick="editCanvas(this.id)">CrisFilter</td>
+			<td class="filter" id="John" onclick="editCanvas(this.id)">JohnFilter</td>
+			<td class="filter" id="Nicolas" onclick="editCanvas(this.id)">NicolasFilter</td>
+			<td class="filter" id="Ali" onclick="editCanvas(this.id)">AliFilter</td>
+			<td class="filter" id="Ahmad" onclick="editCanvas(this.id)">AhmadFilter</td>
+			<td class="filter" id="Karol" onclick="editCanvas(this.id)">KarolFilter</td>
 		</tr>
 	
 	</table>
 	
 	<br>
-	<canvas id="myCanvas" width="200" height="100"></canvas>
+	
   
   </body>
 </html>
