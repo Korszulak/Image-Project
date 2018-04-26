@@ -21,6 +21,9 @@ function editCanvas(val)
 	canvas.width = img.width;
 	canvas.height = img.height;
 	context.drawImage(img, 0, 0);
+	passOne = Math.random() * (0.600 - 0.000);
+	passTwo = Math.random() * (0.600 - 0.000) + 0.100;
+	passThree = Math.random() * (0.600 - 0.000) + 0.500;
 	//var savedImage = canvas.toDataURL("image/png");
 
 	var imageData = context.getImageData(0, 0, canvas.width, canvas.height),
@@ -39,32 +42,25 @@ function editCanvas(val)
 			pix[i+2] = b;
 			break;
 			case "Jacob":
-			  // Color-Blind?
-      			pix[i] = (r*.230)+(g*.159)+(b*.0);
-			pix[i+1] = (r*.86)+(g*.180)+(b*.233);
-			pix[i+2] = (r*.0)+(g*.114)+(b*.178);
 			break;
 			case "Thaddeus":
-			pix[i] = (r*.500)+(g*.200)+(b*.160);
-			pix[i+1] = (r*.200)+(g*.400)+(b*.130);
-			pix[i+2] = (r*.300)+(g*.222)+(b*.666);
 			break;
 			case "Jace":
+			pix[i] = (r*.390)+(g*.700)+(b*.185);
+			pix[i+1] = (r*.300)+(g*.600)+(b*.100);
+			pix[i+2] = (r*.200)+(g*.500)+(b*.100);
 			break;
 			case "Julian":
-<<<<<<< HEAD
-			pix[i] = (r*.390)+(g*1.3)+(b);
-                        pix[i+1] = (r)+(g)+(b);
-                        pix[i+2] = (r*.9)+(g*.783)+(b*1.2);
-=======
 			pix[i]=((R-B)+(R-G))
 			pix[i+1]=((G-R)+G)
 			pix[i+2]=(B*0.394)
->>>>>>> 1b2fe88f18e3c9c47a859b25628bcdaed67babf7
 			break;
 			case "Michael":
 			break;
 			case "Cris":
+			pix[i] = (r*passOne + g*passOne + b*passOne);
+			pix[i+1] = (r*passTwo + g*passTwo + b*passTwo);
+			pix[i+2] = (r*passThree + g*passThree + b*passThree);
 			break;
 			case "John":
 			// Sepia formula
@@ -73,18 +69,13 @@ function editCanvas(val)
 			pix[i+2] = (r*.272)+(g*.534)+(b*.131);
 			break;
 			case "Nicolas":
-      			pix[i] = (r*.21)+(g*.72)+(b*.07)
-      			pix[i+1] = (r*.24)+(g*.80)+(b*.099)
-      			pix[i+2] = (r*.30)+(g*.9)+(b*.1)
+      pix[i] = (r*.21)+(g*.72)+(b*.07)
 			break
 			case "Ali":
 			break;
 			case "Ahmad":
 			break;
 			case "Karol":
-			pix[i] = r+(b*.25);
-			pix[i+1] = g+(b*.25);
-			pix[i+2] = b+(b*.25);
 			break;
 		}
 	}
