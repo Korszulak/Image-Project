@@ -70,6 +70,8 @@ function editCanvas(val)
 			break;
 			case "Nicolas":
       pix[i] = (r*.21)+(g*.72)+(b*.07)
+			pix[i+1] = (r*.12)+(g*.62)+(b*.1);
+			pix[i+2] = (r*.2)+(g*.26)+(b*.70);
 			break
 			case "Ali":
 			break;
