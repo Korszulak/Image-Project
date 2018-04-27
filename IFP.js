@@ -72,7 +72,6 @@ function editCanvas(val)
 			case "Cris":
 			pix[i] = (r*passOne + g*passOne + b*passOne);
 			pix[i+1] = (r*passTwo + g*passTwo + b*passTwo);
-			pix[i+2] = (r*passThree + g*passThree + b*passThree);
 			break;
 			case "John":
 			// Sepia formula
