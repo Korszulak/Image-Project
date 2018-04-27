@@ -42,8 +42,14 @@ function editCanvas(val)
 			pix[i+2] = b;
 			break;
 			case "Jacob":
+			pix[i] = (r*.230)+(g*.159)+(b*.0);
+			pix[i+1] = (r*.86)+(g*.180)+(b*.233);
+			pix[i+2] = (r*.0)+(g*.114)+(b*.178);
 			break;
 			case "Thaddeus":
+			pix[i] = (r*.500)+(g*.200)+(b*.160);
+			pix[i+1] = (r*.200)+(g*.400)+(b*.130);
+			pix[i+2] = (r*.300)+(g*.222)+(b*.666);
 			break;
 			case "Jace":
 			pix[i] = (r*.390)+(g*.700)+(b*.185);
@@ -51,11 +57,17 @@ function editCanvas(val)
 			pix[i+2] = (r*.200)+(g*.500)+(b*.100);
 			break;
 			case "Julian":
-			pix[i]=((R-B)+(R-G))
-			pix[i+1]=((G-R)+G)
-			pix[i+2]=(B*0.394)
+			pix[i] = (r*.390)+(g*1.3)+(b);
+            pix[i+1] = (r)+(g)+(b);
+            pix[i+2] = (r*.9)+(g*.783)+(b*1.2);
+			//pix[i]=((r-b)+(r-g))
+			//pix[i+1]=((g-r)+g)
+			//pix[i+2]=(b*0.394)
 			break;
 			case "Michael":
+			pix[i] = (r*.150)+(g*.550)+(b*.110);
+			pix[i+1] = (r*200)+(g*.750)+(b*.340);
+			pix[i+2] = (r*300)+(g*.300)+(b*.210);
 			break;
 			case "Cris":
 			pix[i] = (r*passOne + g*passOne + b*passOne);
@@ -64,18 +76,27 @@ function editCanvas(val)
 			break;
 			case "John":
 			// Sepia formula
-			pix[i] = (r*.393)+(g*.769)+(b*.189);
-			pix[i+1] = (r*.394)+(g*.686)+(b*.168);
-			pix[i+2] = (r*.272)+(g*.534)+(b*.131);
+			//pix[i] = (r*.393)+(g*.769)+(b*.189);
+			//pix[i+1] = (r*.394)+(g*.686)+(b*.168);
+			//pix[i+2] = (r*.272)+(g*.534)+(b*.131);
+			pix[i] = b;
+			pix[i+1] = r;
+			pix[i+2] = g;
 			break;
 			case "Nicolas":
-      pix[i] = (r*.21)+(g*.72)+(b*.07)
+			pix[i] = (r*.21)+(g*.72)+(b*.07)
 			break
 			case "Ali":
+			pix[i] = (r*.227)+(g*.137)+(b*.80);
+			pix[i+1]=(r*.630)+(g*.334)+(b*.250);
+			pix[i+2]=(r*.780)+(g*.479)+(b*.324);
 			break;
 			case "Ahmad":
 			break;
 			case "Karol":
+			pix[i] = r+(b*.25);
+			pix[i+1] = g+(b*.25);
+			pix[i+2] = b+(b*.25);
 			break;
 		}
 	}
