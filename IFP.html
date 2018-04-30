@@ -2,19 +2,21 @@
 <html>
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="PSPad editor, www.pspad.com">
   <link rel="stylesheet" type="text/css" href="IFP.css">
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="IFP.js"></script>
   <title>IFP Project</title>
   </head>
-  <body>
+  <body class="pagebody">
 	<h1 class="title" align="center">Image Filter Project (IFP)</h1>
 
-	<div class="pagebody" align="center">
+	<div align="center">
 
-
-	<input type='file' onchange="readURL(this);"/>
+	<form>
+		<input type='file' onchange="readURL(this);"/>
+		<input type="text" id="urlbox" value="" placeholder="Image URL" />
+		<input type="button" id="urlbtn" value="Upload"/>
+	</form>
 	<br>
 	<img id="imgview" src="http://placehold.it/350" alt="Image view"/>
 	<canvas id="myCanvas" width="0" height="0"></canvas>
@@ -25,11 +27,11 @@
 
 		<tr>
 			<td class="filter" id="NoEdit" onclick="editCanvas(this.id)">No Edit</td>
-			<td class="filter" id="Jacob" onclick="editCanvas(this.id)">JacobFilter</td>
-			<td class="filter" id="Thaddeus" onclick="editCanvas(this.id)">ThaddeusFilter</td>
+			<td class="filter" id="Jacob" onclick="editCanvas(this.id)">Jacob's Filter</td>
+			<td class="filter" id="Thaddeus" onclick="editCanvas(this.id)">Thaddeus' Filter</td>
 			<td class="filter" id="Jace" onclick="editCanvas(this.id)">What is life?</td>
 			<td class="filter" id="Julian" onclick="editCanvas(this.id)">Purple People Eater</td>
-			<td class="filter" id="Michael" onclick="editCanvas(this.id)">MichaelFilter</td>
+			<td class="filter" id="Michael" onclick="editCanvas(this.id)">Michael's Filter</td>
 		</tr>
 
 		<tr>

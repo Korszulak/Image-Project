@@ -12,6 +12,17 @@ function readURL(input)
 	}
 }
 
+window.onload = function()
+{
+	document.getElementById('urlbtn').onclick = function()
+	{
+		var img = document.getElementById("imgview");
+		var url = document.getElementById("urlbox").value;
+		img.src = url + '?' + new Date().getTime(); // Avoids DOME errors
+		img.setAttribute("crossOrigin", "");
+	}
+}
+
 function editCanvas(val)
 {
 	var canvas = document.getElementById('myCanvas'),
