@@ -1,18 +1,27 @@
 .pagebody
 {
-	background-color: powderblue;
+	background-color: #71BBFF;
 }
 
 .filter
 {
-	border: 2px solid transparent;
+	border: 2px solid black;
+	border-radius: 15px;
 	padding: 50px;
+	background-color: #9FD1FF;
+	text-align: center;
+}
+
+.title
+{
+	background-color: #9FD1FF;
 }
 
 .filter:hover
 {
-	border: 2px solid black;
 	padding: 50px;
+	background-color: #F0F8FF;
+
 }
 
 .img

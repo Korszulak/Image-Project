@@ -12,6 +12,17 @@ function readURL(input)
 	}
 }
 
+window.onload = function()
+{
+	document.getElementById('urlbtn').onclick = function()
+	{
+		var img = document.getElementById("imgview");
+		var url = document.getElementById("urlbox").value;
+		img.src = url + '?' + new Date().getTime(); // Avoids DOME errors
+		img.setAttribute("crossOrigin", "");
+	}
+}
+
 function editCanvas(val)
 {
 	var canvas = document.getElementById('myCanvas'),
@@ -42,9 +53,9 @@ function editCanvas(val)
 			pix[i+2] = b;
 			break;
 			case "Jacob":
-			pix[i] = (r*.230)+(g*.159)+(b*.0);
-			pix[i+1] = (r*.86)+(g*.180)+(b*.233);
-			pix[i+2] = (r*.0)+(g*.114)+(b*.178);
+			pix[i] = (r*.02)+(g*.04)+(b*.02);
+			pix[i+1] = (r*.06)+(g*.18)+(b*.03);
+			pix[i+2] = (r*.04)+(g*.04)+(b*.17);
 			break;
 			case "Thaddeus":
 			pix[i] = (r*.500)+(g*.200)+(b*.160);
@@ -65,9 +76,9 @@ function editCanvas(val)
 			//pix[i+2]=(b*0.394)
 			break;
 			case "Michael":
-			pix[i] = (r*.150)+(g*.550)+(b*.110);
-			pix[i+1] = (r*200)+(g*.750)+(b*.340);
-			pix[i+2] = (r*300)+(g*.300)+(b*.210);
+			pix[i] = (r*.3)+(g*.15)+(b*.4);
+            pix[i+1] = (r*.2)+(g*.24)+(b*.28);
+			pix[i+2] = (r*.15)+(g*.5)+(b*.35);
 			break;
 			case "Cris":
 			pix[i] = (r*passOne + g*passOne + b*passOne);
@@ -84,7 +95,9 @@ function editCanvas(val)
 			pix[i+2] = g;
 			break;
 			case "Nicolas":
-			pix[i] = (r*.21)+(g*.72)+(b*.07)
+			pix[i] = (r*.21)+(g*.72)+(b*.07);
+			pix[i+1] = (r*.12)+(g*.62)+(b*.1);
+			pix[i+2] = (r*.2)+(g*.26)+(b*.70);
 			break
 			case "Ali":
 			pix[i] = (r*.227)+(g*.137)+(b*.80);
