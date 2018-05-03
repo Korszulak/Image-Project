@@ -110,9 +110,9 @@ function editCanvas(val)
 			pix[i+2] = (r*.277)+(g*.276)+(b*.770);
 			break;
 			case "Karol":
-			pix[i] = r+(b*.25);
-			pix[i+1] = g+(b*.25);
-			pix[i+2] = b+(b*.25);
+			pix[i] = (r*.227)+(g*.137)+(b*.80);
+			pix[i+1] = (r*.630)+(g*.334)+(b*.250);
+			pix[i+2] = b);
 			break;
 		}
 	}
